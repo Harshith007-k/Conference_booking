@@ -4,3 +4,4 @@ streamlit
 requests
 pandas
 sqlite3
+sqlalchemy
