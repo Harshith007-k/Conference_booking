@@ -62,8 +62,8 @@ else:
 st.image("https://bdk-wp-media.s3.amazonaws.com/wp-content/uploads/2020/01/13165647/About-icon.gif",use_column_width="always")
 # Time range selection (from and to)
 st.subheader("Book a Time Slot")
-name = st.text_input("Enter your name")
-booking_type = st.selectbox("Select Booking Type", ["Meeting", "Workshop", "Consultation"])
+name = st.text_input("Enter your name and Department")
+booking_type = st.selectbox("Select Booking Type", ["Big conference room", "Discussion room1", "Discussion room2"])
 start_time = st.time_input("Select start time", default_start_time)
 end_time = st.time_input("Select end time", (datetime.combine(datetime.today(), start_time) + timedelta(hours=1)).time())
 
